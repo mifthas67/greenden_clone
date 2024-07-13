@@ -14,12 +14,12 @@
   <body>
     <!-- responsible nav bar -->
 
-    <nav
+    <nav 
       class="bg-green-100 p-3 flex justify-between shadow-2xl sticky top-0 z-10"
     >
       <h1 class="text-2xl">Greenden</h1>
 
-      <svg
+      <svg id="menuicon"
         xmlns="http://www.w3.org/2000/svg"
         class="h-6 w-6"
         fill="none"
@@ -47,6 +47,29 @@
         </li>
       </ul>
     </nav>
+
+    <!-- side nav bar -->
+    <section
+      id="sidenav"
+      class="bg-green-100 fixed z-20 top-0"
+      style="width: 50%; height: 100vh;right:-50%"
+      
+    >
+      <div class="text-right p-5">
+        <p id="close-nav" class="inline cursor-pointer">x</p>
+      </div>
+      <ul class="flex flex-col gap-10 items-center text-gray-400">
+        <li class="hover:underline hover:text-black">
+          <a href="index.html"> Home</a>
+        </li>
+        <li class="hover:underline hover:text-black">
+          <a href="product.html">Product</a>
+        </li>
+        <li class="hover:underline hover:text-black">
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </section>
 
     <!-- Header section -->
 
@@ -157,7 +180,7 @@
     <section class="p-4 text-center">
       <h1 class="font-bold mt-2 text-2xl">Best Seller</h1>
 
-      <div class="grid grid-cols-2 mt-5 gap-5 md:flex">
+      <div  class="grid grid-cols-2 mt-5 gap-5 md:flex">
         <div>
           <img
             class="inline hover:shadow-2xl transform hover:-translate-y-2"
@@ -172,7 +195,7 @@
             class="inline hover:shadow-2xl transform hover:-translate-y-2"
             src="./img/plant_3.png"
           />
-          <p>Rose plant</p>
+          <p>sun flower</p>
           <p>$20</p>
         </div>
 
@@ -181,7 +204,7 @@
             class="inline hover:shadow-2xl transform hover:-translate-y-2"
             src="./img/plant_4.png"
           />
-          <p>Rose plant</p>
+          <p>crotton</p>
           <p>$20</p>
         </div>
 
@@ -190,7 +213,7 @@
             class="inline hover:shadow-2xl transform hover:-translate-y-2"
             src="./img/plant_5.png"
           />
-          <p>Rose plant</p>
+          <p>farm tree</p>
           <p>$20</p>
         </div>
 
@@ -215,55 +238,75 @@
 
     <!-- Customer Review -->
     <section>
+      <h2 class="text-x2 font-bold text-center mb-5">Customer Reviews</h2>
 
-        
-        <h2 class="text-x2 font-bold text-center mb-5">Customer Reviews</h2>
-        
-        <div class="bg-green-900 rounded mb-3">
-        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt beatae quos aliquid in similique eos adipisci facilis ipsam ipsum ex, molestiae, natus consequuntur nesciunt cum, optio doloremque? Molestias eligendi iste quasi praesentium laboriosam aliquid inventore facere quos deserunt cum doloribus, fugit ea vitae corrupti quisquam, obcaecati quis unde, aut id.</p>
+      <div class="bg-green-900 rounded mb-3">
+        <p class="text-white">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt beatae
+          quos aliquid in similique eos adipisci facilis ipsam ipsum ex,
+          molestiae, natus consequuntur nesciunt cum, optio doloremque?
+          Molestias eligendi iste quasi praesentium laboriosam aliquid inventore
+          facere quos deserunt cum doloribus, fugit ea vitae corrupti quisquam,
+          obcaecati quis unde, aut id.
+        </p>
         <p class="text-yellow-200">Mchicle</p>
-        </div>
+      </div>
 
-        <div class="bg-green-900 rounded mb-3">
-        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt beatae quos aliquid in similique eos adipisci facilis ipsam ipsum ex, molestiae, natus consequuntur nesciunt cum, optio doloremque? Molestias eligendi iste quasi praesentium laboriosam aliquid inventore facere quos deserunt cum doloribus, fugit ea vitae corrupti quisquam, obcaecati quis unde, aut id.</p>
+      <div class="bg-green-900 rounded mb-3">
+        <p class="text-white">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt beatae
+          quos aliquid in similique eos adipisci facilis ipsam ipsum ex,
+          molestiae, natus consequuntur nesciunt cum, optio doloremque?
+          Molestias eligendi iste quasi praesentium laboriosam aliquid inventore
+          facere quos deserunt cum doloribus, fugit ea vitae corrupti quisquam,
+          obcaecati quis unde, aut id.
+        </p>
         <p class="text-yellow-200">Mchicle</p>
-        </div>
+      </div>
 
-        <div class="bg-green-900 rounded mb-3">
-        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt beatae quos aliquid in similique eos adipisci facilis ipsam ipsum ex, molestiae, natus consequuntur nesciunt cum, optio doloremque? Molestias eligendi iste quasi praesentium laboriosam aliquid inventore facere quos deserunt cum doloribus, fugit ea vitae corrupti quisquam, obcaecati quis unde, aut id.</p>
+      <div class="bg-green-900 rounded mb-3">
+        <p class="text-white">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt beatae
+          quos aliquid in similique eos adipisci facilis ipsam ipsum ex,
+          molestiae, natus consequuntur nesciunt cum, optio doloremque?
+          Molestias eligendi iste quasi praesentium laboriosam aliquid inventore
+          facere quos deserunt cum doloribus, fugit ea vitae corrupti quisquam,
+          obcaecati quis unde, aut id.
+        </p>
         <p class="text-yellow-200">Mchicle</p>
-        </div>
-
+      </div>
     </section>
 
-<!-- Join our News Letter  -->
+    <!-- Join our News Letter  -->
 
-<section>
-
-    <div class="text-center">
-
+    <section>
+      <div class="text-center">
         <h2 class="font-bold text-xl text-center">Join Our News Letter</h2>
-        <p >Signup for our email newspaper to get exclosive discounts,updates and more</p>
-        <input type="text" class="border border-black "style="width: 70%;">
-        <br>
+        <p>
+          Signup for our email newspaper to get exclosive discounts,updates and
+          more
+        </p>
+        <input type="text" class="border border-black" style="width: 70%" />
+        <br />
         <button class="bg-black text-white p-2 m-2 underline">Subscribe</button>
+      </div>
+    </section>
 
+    <!-- Footer -->
 
-    </div>
+    <section class="bg-green-300">
+      <h2 class="font-bold text-xl m-2">Greenden</h2>
+      <p class="m-2 text-white">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias
+        beatae commodi placeat modi quas quia itaque, odit autem molestiae
+        repellendus sed voluptates facilis adipisci officiis omnis eaque dolore,
+        corrupti debitis dolores tempore minima deserunt. Delectus illo tempore
+        tenetur eveniet illum neque deleniti aliquid accusamus ea ipsam,
+        necessitatibus consequuntur corrupti optio!
+      </p>
+      <p class="text-xs m-2">&copy 2021 Greenden.com</p>
+    </section>
 
-
-</section>
-
-
-<!-- Footer -->
-
-<section class="bg-green-300">
-
-<h2 class="font-bold text-xl m-2">Greenden</h2>
-<p class="m-2 text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias beatae commodi placeat modi quas quia itaque, odit autem molestiae repellendus sed voluptates facilis adipisci officiis omnis eaque dolore, corrupti debitis dolores tempore minima deserunt. Delectus illo tempore tenetur eveniet illum neque deleniti aliquid accusamus ea ipsam, necessitatibus consequuntur corrupti optio!</p>
-<p class="text-xs m-2">&copy 2021 Greenden.com</p>
-
-</section>
-
+    <script src="index.js"></script>
   </body>
 </html>
